@@ -6,7 +6,8 @@ import collections
 
 def parser():
     """Parse the command and return its arguments."""
-    my_parser = argparse.ArgumentParser()
+    my_parser = argparse.ArgumentParser(
+        description='Convert a data stored in JSON file format to CSV file format.')
 
     my_parser.add_argument('-i', '--input', metavar='file',
                            help='input JSON filename', required=True)
